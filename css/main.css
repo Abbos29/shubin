@@ -1,1 +1,151 @@
-/*# sourceMappingURL=main.css.map */
+.section-title {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-image: none;
+  }
+}
+@media (max-width: 920px) {
+  .hero .container {
+    padding-bottom: 40px;
+  }
+}
+.hero__title {
+  font-size: 48px;
+  line-height: 1.1;
+}
+@media (max-width: 920px) {
+  .hero__title {
+    font-size: 34px;
+  }
+}
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 25px;
+  }
+}
+@media (max-width: 920px) {
+  .hero__pretitle-2 {
+    font-size: 18px;
+  }
+}
+.box {
+  padding-top: 40px;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
+  align-items: start;
+}
+@media (max-width: 680px) {
+  .box {
+    grid-template-columns: 1fr;
+    gap: 55px 20px;
+  }
+}
+.box__item {
+  padding: 25px;
+  border-radius: 20px;
+  background: #fafafa;
+  color: #000;
+}
+@media (max-width: 480px) {
+  .box__item {
+    padding: 20px;
+  }
+}
+.box__item-icon {
+  max-width: 110px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+  margin-top: -80px;
+  border: 10px solid #1f1f1f;
+}
+@media (max-width: 768px) {
+  .box__item-icon {
+    max-width: 90px;
+    padding: 10px;
+    margin-top: -70px;
+  }
+}
+.box__item-icon img {
+  max-width: 100%;
+  width: 100%;
+}
+.box__item-title {
+  max-width: 450px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.3;
+  padding-bottom: 15px;
+}
+@media (max-width: 920px) {
+  .box__item-title {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 768px) {
+  .box__item-title {
+    font-size: 22px;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .box__item-title {
+    font-size: 20px;
+  }
+}
+.box__item-text {
+  font-size: 19px;
+  line-height: 1.3;
+}
+.box__item-text span {
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .box__item-text {
+    font-size: 16px;
+    line-height: 1.1;
+  }
+}
+.box__item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tarif__item:nth-child(2) {
+  background: red;
+}
+.tarif__item:nth-child(2) p, .tarif__item:nth-child(2) .box__item-text {
+  color: #fff;
+}
+.tarif__item:nth-child(2) .box__item-title::after {
+  background: #fff;
+}
+.tarif__item .box__item-title {
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.tarif__item .box__item-title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: #000;
+}
+.tarif__item .box__item-icon {
+  margin-left: auto;
+  margin-right: auto;
+}/*# sourceMappingURL=main.css.map */

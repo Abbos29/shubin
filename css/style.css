@@ -372,9 +372,9 @@ body::-webkit-scrollbar-thumb {
     max-width: 700px;
     font-weight: 600;
     font-size: 20px;
-    line-height: 1.1;
+    line-height: 1.2;
     margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: #fff;
 }
 
@@ -406,7 +406,7 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
   border-radius: 30px;
   background: #18b5d8;
-  padding: 28px 32px;
+  padding: 20px 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -505,8 +505,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .atom {
-  width: 15px;
-  height: 15px;
+  min-width: 15px;
+  min-height: 15px;
   background: green;
   border-radius: 999px;
   -webkit-animation: fade 2s ease-in-out infinite;
@@ -812,6 +812,7 @@ input[type=button]:focus {
 @media (max-width: 991.98px) {
   .hero {
     background-position: top 120px right -100px;
+    height: auto;
   }
 
   .hero__title {
@@ -931,19 +932,9 @@ input[type=button]:focus {
     background-position: top 120px right -100px;
   }
 
-  .hero__wrapper {
-    padding-top: 20%;
-  }
-
   .hero__top-date {
     padding: 5px 8px;
     min-width: auto;
-  }
-
-  .hero__title {
-    font-size: 31px;
-    line-height: 31px;
-    margin: 20% 0;
   }
 
   .hero__title-2 {

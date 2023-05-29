@@ -1,0 +1,254 @@
+.section-title {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+// Hero
+
+.hero {
+
+    @media (max-width: 768px) {
+        background-image: none;
+    }
+    .container {
+        @media (max-width: 920px) {
+            padding-bottom: 40px;
+        }
+    }
+    // .hero__wrapper
+    &__wrapper {
+    }
+    // .hero__content
+    &__content {
+    }
+    // .hero__top
+    &__top {
+    }
+    // .hero__logo
+    &__logo {
+    }
+    // .hero__top-date
+    &__top-date {
+    }
+    // .hero__top-text
+    &__top-text {
+    }
+    // .hero__title
+    &__title {
+        font-size: 48px;
+        line-height: 1.1;
+
+        @media (max-width: 920px) {
+            font-size: 34px;
+        }
+        @media (max-width: 768px) {
+            font-size: 25px;
+        }
+    }
+    // .hero__pretitle-2
+    &__pretitle-2 {
+
+        @media (max-width: 920px) {
+            font-size: 18px;
+        }
+    }
+    // .hero__btns
+    &__btns {
+    }
+    // .hero__btn
+    &__btn {
+    }
+    // .hero__gift
+    &__gift {
+    }
+    // .hero__gift-icon
+    &__gift-icon {
+    }
+    // .hero__gift-box
+    &__gift-box {
+    }
+    // .hero__gift-text
+    &__gift-text {
+    }
+    // .hero__bottom-arrow
+    &__bottom-arrow {
+    }
+}
+.modal {
+    // .modal__btn
+    &__btn {
+    }
+    // .modal__wrapper
+    &__wrapper {
+    }
+    // .modal__close
+    &__close {
+    }
+    // .modal__body
+    &__body {
+    }
+    // .modal__title
+    &__title {
+    }
+    // .modal__checkbox
+    &__checkbox {
+    }
+    // .modal__checkbox-text
+    &__checkbox-text {
+    }
+}
+.contact-form {
+}
+
+
+.box {
+    padding-top: 40px;
+
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 20px;
+    align-items: start;
+
+    @media (max-width: 680px) {
+        grid-template-columns: 1fr;
+        gap: 55px 20px;
+    }
+    // .box__item
+    &__item {
+        padding: 25px;
+        border-radius: 20px;
+        background: #fafafa;
+        color: #000;
+        
+        // box-shadow: 4px 4px 18px 3px rgba(0, 0, 255, .2);
+
+        @media (max-width: 480px) {
+            padding: 20px;
+        }
+    }
+    // .box__item-icon
+    &__item-icon {
+        max-width: 110px;
+        background: #fff;
+        padding: 15px;
+        border-radius: 999px;
+        margin-bottom: 10px;
+        margin-top: -80px;
+        border: 10px solid #1f1f1f;
+
+        @media (max-width: 768px) {
+            max-width: 90px;
+            padding: 10px;
+            margin-top: -70px;
+        }
+
+        img {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    // .box__item-title
+    &__item-title {
+        max-width: 450px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 1.3;
+        padding-bottom: 15px;
+        
+        @media (max-width: 920px) {
+            font-size: 25px;
+            line-height: 1.2;
+        }
+        @media (max-width: 768px) {
+            font-size: 22px;
+            padding-bottom: 10px;
+        }
+        @media (max-width: 480px) {
+            font-size: 20px;
+        }
+    }
+    // .box__item-text
+    &__item-text {
+        font-size: 19px;
+        line-height: 1.3;
+
+        span {
+            font-weight: 700;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+            line-height: 1.1;
+        }
+    }
+    &__item-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+.for {
+    // .for__wrapper
+    &__wrapper {
+    }
+    // .for__item
+    &__item {
+    }
+}
+
+.result {
+    // .result__wrapper
+    &__wrapper {
+    }
+    // .result__item
+    &__item {
+    }
+}
+
+.tarif {
+    // .tarif__wrapper
+    &__wrapper {
+    }
+    // .tarif__item
+    &__item {
+
+        &:nth-child(2) {
+            background: red;
+
+            p, .box__item-text {
+                color: #fff;
+            }
+
+            .box__item-title {
+                &::after {
+                    background: #fff;
+                }
+            }
+        }
+        
+        .box__item-title {
+            max-width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background: #000;
+            }
+        }
+        .box__item-icon {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
