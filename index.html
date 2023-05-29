@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Landing Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Landing Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="main__body">
+
+<!-- Main Page -->
+<main>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container">
+
+        <div class="hero__wrapper" onload="go()">
+            <div class="hero__content">
+                <div class="hero__top">
+                    <img class="hero__logo logo" src="./img/logo.png" alt="logo">
+    
+                    <div class="hero__top-date">
+                        <div class="atom"></div>
+    
+                        <p class="hero__top-text medium">Старт курса: 20 июня. Срок обучения: 8 недель</p>
+                    </div>
+    
+                    <p class="hero__top-text">Мастер-класс Юрия Шубина</p>
+                </div>
+    
+                <h1 class="hero__title">
+                    Углубленный курс по интернет-маркетингу c <span class="pink">гарантией трудоуйстройства</span>
+                </h1>
+                <p class="hero__pretitle-2">
+                    Пошаговая программа для новичков и текущих специалистов, которая поможет вам вырваться на новый уровень за счет качественного обучения и обратной связи.
+                </p>
+    
+                <div class="hero__btns">
+                    <a class="modal__btn hero__btn" href="#">УЧАСТВОВАТЬ БЕСПЛАТНО</a>
+    
+                    <svg class="hero__btn-arrow" viewBox="0 0 243.84 75.68" width="70" height="20" fill="white"><polygon class="cls-1" points="206 0 201.76 4.24 232.36 34.84 0 34.84 0 40.84 232.36 40.84 201.76 71.43 206 75.67 243.84 37.84 206 0"/> </g> </g> </svg>
+    
+                    <div class="hero__timeleft" id="timer">
+
+                            <!-- <div class="timer-section">
+                                <div class="days-block">
+                                    <span class="days">00</span>
+                                </div>
+                            </div>
+                            : -->
+                            
+                            <div class="timer-section">
+                                <div class="hours-block">
+                                    <span class="hours">00</span>
+                                </div>
+                            </div>
+                            :
+                            
+                            <div class="timer-section">
+                                <div class="minutes-block">
+                                    <span class="minutes">00</span>
+                                </div>
+                            </div>
+                            :
+                            
+                            <div class="timer-section">
+                                <div class="seconds-block">
+                                    <span class="seconds">00</span>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+    
+                <div class="hero__gift">
+                    <img class="hero__gift-icon" src="./img/hero/gift.png" alt="gift-icon">
+    
+                    <div class="hero__gift-box">
+                        <p class="hero__gift-text">Зарегистрируйся и получи гайд</p>
+    
+                        <p class="hero__gift-text">«10 способов продвижения товаров на Wildberries»</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="hero__img-box">
+                <img class="hero__img" src="./img/hero/hero-img.png" alt="hero-img">
+
+            </div> -->
+        </div>
+
+        <div class="hero__bottom-arrow">
+            <img src="./img/icons/arrow-bottom.svg" alt="arrow-bottom">
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal__wrapper">
+        <div class="modal">
+            <div class="modal__close"> <img src="./img/cancel.svg" alt="cancel" width="10px" height="10px"></div>
+            <div class="modal__body">
+                <p class="modal__title">Зарегистрируйся сейчас!</p>
+
+                <form class="contact-form" id="contact-form">
+                    <input type="text" placeholder="Имя"/>
+
+                    <input type="email" placeholder="Email"/>
+
+                    <input type="tel" placeholder="Номер"/>
+
+                    <input type="text" placeholder="Город"/>
+
+                    <input type="button" value="Принять участие"/>
+                </form>
+
+                <div class="modal__checkbox">
+                    <input type="checkbox">
+                    <p class="modal__checkbox-text">Даю согласие на обработку персональных данных в соответствии с политикой </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Benefits -->
+<section class="benefits">
+    <div class="container">
+        
+        <h2 class="benefits__title section-title">На мастер-классе ты получишь:</h2>
+
+        <div class="benefits__wrapper">
+            <div class="benefits__item">
+                <img class="benefits__item-img" src="./img/benefits/favorite-site.png" alt="img">
+
+                <p class="benefits__item-text">Пошаговый выход на Маркетплейсы </p>
+            </div>
+
+            <div class="benefits__item">
+                <img class="benefits__item-img" src="./img/benefits/laptop.png" alt="img">
+
+                <p class="benefits__item-text">Как выбрать товар</p>
+            </div>
+
+            <div class="benefits__item">
+                <img class="benefits__item-img" src="./img/benefits/moneybox.png" alt="img">
+
+                <p class="benefits__item-text">Поиск поставщика и производства</p>
+            </div>
+
+            <div class="benefits__item">
+                <img class="benefits__item-img" src="./img/benefits/rouble.png" alt="img">
+
+                <p class="benefits__item-text">Как просчитать unit-экономику до копейки </p>
+            </div>
+
+            <div class="benefits__item">
+                <img class="benefits__item-img" src="./img/benefits/target.png" alt="img">
+
+                <p class="benefits__item-text">Стратегия продвижения любого товара в топ за 14 дней</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Reviews -->
+<section class="reviews">
+    <div class="container">
+        
+        <h2 class="reviews__title section-title">Отзывы участников</h2>
+
+    </div>
+    
+    <div class="reviews__wrapper">
+        <img class="reviews__img" src="./img/reviews/rev.jpg" alt="reviews-img">
+        <img class="reviews__img" src="./img/reviews/rev.jpg" alt="reviews-img">
+    </div>
+    
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        
+        <div class="footer__wrapper">
+            <div class="footer__box">
+                <p class="footer__logo">
+                    <img src="./img/logo.png" alt="logo">
+                    OnePlace
+                </p>
+
+                <p class="footer__text">Технологическая образовательная компания для предпринимателей</p>
+
+                <p class="footer__rights">Все права защищены, 2022. АНО «ЦРП»</p>
+            </div>
+
+            <div class="footer__box">
+                <!-- <a class="footer__tel" href="#">8 (800) 550-76-19</a> -->
+
+                <div class="footer__soc">
+                    <!-- <a class="footer__soc-link" href="#"><img src="./img/icons/yt.png" alt="icon"></a> -->
+                    <a class="footer__soc-link" href="https://t.me/oneplaceshopp"><img src="./img/telegram.png" alt="icon"></a>
+                    <!-- <a class="footer__soc-link" href="#"><img src="./img/icons/vk.png" alt="icon"></a> -->
+                </div>
+            </div>
+
+            <div class="footer__box">
+                <a class="footer__policy" href="#">Политика конфиденциальности</a>
+
+                <p class="footer__inn"><span>ОГРН:</span> 317682000027309 <br>
+                    <span>ИНН:</span> 680903238499 <br>
+                    <span>ИП</span> Соломатина Ольга Владимировна</p>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+
+<script src="./js/scripts.js"></script>
+
+</html>
