@@ -263,12 +263,20 @@ section {
         max-width: 350px;
         margin: 40px auto 0;
     }
+    &__btn-2 {
+        max-width: 350px;
+        margin: 10px auto 0;
+        background: rgb(83, 167, 196);
+    }
 }
 
 
 .module {
     // .module__wrapper
     &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
     }
     &__inner {
         display: grid;

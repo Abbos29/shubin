@@ -272,7 +272,7 @@ body::-webkit-scrollbar-thumb {
 .hero {
   background: #171717;
   height: 100vh;
-  background-image: url(../img/hero/hero-img-new.png);
+  background-image: url(../img/man-1.png);
   background-repeat: no-repeat;
   background-position: top 100px right;
   background-size: contain;
@@ -299,7 +299,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .hero__logo {
-  max-width: 80px;
+  max-width: 120px;
   width: 100%;
 }
 
@@ -735,7 +735,8 @@ input[type=button]:focus {
 }
 
 .footer__logo img {
-  max-width: 60px;
+  max-width: 120px;
+  width: 100%;
 }
 
 .footer__text {
