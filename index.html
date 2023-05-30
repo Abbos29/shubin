@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="icon" href="./img/logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -26,7 +28,7 @@
 <section class="hero">
     <div class="container">
 
-        <div class="hero__wrapper" onload="go()">
+        <div class="hero__wrapper" onload="go()" data-aos="fade-up">
             <div class="hero__content">
                 <div class="hero__top">
                     <img class="hero__logo logo" src="./img/logo.png" alt="logo">
@@ -186,9 +188,9 @@
 <!-- For -->
 <section class="for">
     <div class="container">
-        <p class="section-title">Для кого курс</p>
+        <p class="section-title" data-aos="fade-right">Для кого курс</p>
         <div class="for__wrapper box">
-            <div class="for__item box__item">
+            <div class="for__item box__item" data-aos="fade-right">
                 <div class="box__item-icon">
                     <img src="./img/icon-1.png" alt="icon">
                 </div>
@@ -196,7 +198,7 @@
                 <p class="box__item-text">Вы будете зарабатовать из любово региона, из любой точки мира. Сможете свободно распоряжаться временем и совмещать работу с другими важными задачами. Работать в декрете.</p>
             </div>
 
-            <div class="for__item box__item">
+            <div class="for__item box__item" data-aos="fade-left">
                 <div class="box__item-icon">
                     <img src="./img/icon-1.png" alt="icon">
                 </div>
@@ -210,9 +212,9 @@
 <!-- Result -->
 <section class="result">
     <div class="container">
-        <p class="section-title">По итогу курса ты получишь</p>
+        <p class="section-title" data-aos="fade-right">По итогу курса ты получишь</p>
         <div class="result__wrapper box">
-            <div class="result__item box__item">
+            <div class="result__item box__item" data-aos="fade-right">
                 <div class="box__item-icon">
                     <img src="./img/icon-1.png" alt="icon">
                 </div>
@@ -220,7 +222,7 @@
                 <p class="box__item-text">Вы научитель анализировать рынок, оформлять карточки товаров, продвигать товары на площадке, оценивать прибыльность бизнеса, работать с клиентами и в целом контролировать весь процесс торговли.</p>
             </div>
 
-            <div class="result__item box__item">
+            <div class="result__item box__item" data-aos="fade-left">
                 <div class="box__item-icon">
                     <img src="./img/icon-1.png" alt="icon">
                 </div>
@@ -241,8 +243,8 @@
 <!-- Tarif -->
 <section class="tarif">
     <div class="container">
-        <p class="section-title">Тарифы</p>
-        <div class="tarif__wrapper box">
+        <p class="section-title" data-aos="fade-right">Тарифы</p>
+        <div class="tarif__wrapper box" data-aos="fade-up">
             <div class="tarif__item box__item">
                 <div class="box__item-icon">
                     <img src="./img/icon-1.png" alt="icon">
@@ -288,10 +290,10 @@
 <section class="answer">
     <div class="container">
         <div class="answer__wrapper">
-            <p class="section-title">Часто задаваемые вопросы:</p>
+            <p class="section-title" data-aos="fade-right">Часто задаваемые вопросы:</p>
 
             <!-- Accordion -->
-            <div class="accordion">
+            <div class="accordion" data-aos="fade-up">
                 <div class="accordion__item">
                     <div class="accordion__item-trigger">
                         <div class="trigger__text">Название аккордеона</div>
@@ -375,11 +377,56 @@
     </div>
 </section>
 
+<!-- Review -->
+<section class="review">
+    <div class="container">
+        <p class="section-title" data-aos="fade-right">Отзывы учеников</p>
+        
+        <div class="review__wrapper" data-aos="fade-up">
+            <div class="swiper review__swiper">
+                <div class="swiper-wrapper review__slider">
+                    <div class="swiper-slide review__slide box__item">
+                        <div class="review__slide-icon box__item-icon">
+                            <img src="./img/review-1.png" alt="review">
+                        </div>
+                        <p class="box__item-title">Вася Пушкин</p>
+                        <p class="box__item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae quidem perferendis quos cum adipisci laborum?</p>
+                    </div>
+
+                    <div class="swiper-slide review__slide box__item">
+                        <div class="review__slide-icon box__item-icon">
+                            <img src="./img/review-1.png" alt="review">
+                        </div>
+                        <p class="box__item-title">Вася Пушкин</p>
+                        <p class="box__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sed laudantium laborum facilis sunt nostrum et aliquam repellat voluptate molestiae!</p>
+                    </div>
+
+                    <div class="swiper-slide review__slide box__item">
+                        <div class="review__slide-icon box__item-icon">
+                            <img src="./img/review-1.png" alt="review">
+                        </div>
+                        <p class="box__item-title">Вася Пушкин</p>
+                        <p class="box__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, error?</p>
+                    </div>
+
+                    <div class="swiper-slide review__slide box__item">
+                        <div class="review__slide-icon box__item-icon">
+                            <img src="./img/review-1.png" alt="review">
+                        </div>
+                        <p class="box__item-title">Вася Пушкин</p>
+                        <p class="box__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit id illo asperiores laudantium nobis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Payment -->
 <section class="payment">
     <div class="container">
-        <p class="section-title">Можно платить частями</p>
-        <div class="payment__wrapper">
+        <p class="section-title" data-aos="fade-right">Можно платить частями</p>
+        <div class="payment__wrapper" data-aos="fade-up">
             <div class="payment__item">
                 <div class="payment__item-img">
                     <img src="./img/payment-1.png" alt="payment">
@@ -416,12 +463,12 @@
 <!-- About -->
 <section class="about">
     <div class="container">
-        <p class="section-title">Об авторе</p>
+        <p class="section-title" data-aos="fade-right">Об авторе</p>
         <div class="about__wrapper">
-            <div class="about__img">
+            <div class="about__img" data-aos="fade-right">
                 <img src="./img/about-img.png" alt="about-img">
             </div>
-            <div class="about__info">
+            <div class="about__info" data-aos="fade-left">
                 <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, deleniti.</p>
                 <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, deleniti.</p>
                 <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, deleniti.</p>
@@ -438,7 +485,7 @@
 <footer class="footer">
     <div class="container">
         
-        <div class="footer__wrapper">
+        <div class="footer__wrapper" data-aos="fade-left">
             <div class="footer__box">
                 <p class="footer__logo">
                     <img src="./img/logo.png" alt="logo">
@@ -501,6 +548,8 @@
 
 </body>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="./js/scripts.js"></script>
 
 </html>

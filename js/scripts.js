@@ -1,5 +1,9 @@
 // Custom Scripts
 
+AOS.init({
+    once: true
+});
+
 // Аккордеон
 function accordion() {
     const items = document.querySelectorAll('.accordion__item-trigger')
@@ -50,3 +54,33 @@ function bindModal(trigger, modal, close) {
 // ТРЕТИЙ аргумент - класс кнопки, при клике на которую будет закрываться модальное окно.
 bindModal('.modal__btn', '.modal__wrapper', '.modal__close')
 
+
+const swiperReview = new Swiper('.review__swiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    autoHeight: true,
+
+    autoplay: {
+        delay: 5000,
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // Responsive breakpoints
+    breakpoints: {
+    // when window width is >= 320px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+  }
+});
