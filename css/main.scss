@@ -258,7 +258,102 @@ section {
             margin-right: auto;
         }
     }
+
+    &__btn {
+        max-width: 350px;
+        margin: 40px auto 0;
+    }
 }
+
+
+.module {
+    // .module__wrapper
+    &__wrapper {
+    }
+    &__inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px 30px;
+        padding-top: 30px;
+    }
+    // .module__item
+    &__item {
+        padding: 50px;
+    }
+    // .module__top
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 20px;
+
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background: #000;
+        }
+    }
+    // .module__top-box
+    &__top-box {
+    }
+    // .module__top-pretitle
+    &__top-pretitle {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 1.1;
+        color: red;
+        padding-bottom: 15px;
+    }
+    // .module__top-title
+    &__top-title {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 1.1;
+    }
+    // .module__top-img
+    &__top-img {
+        max-width: 100px;
+
+        img {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    // .module__item-list
+    &__item-list {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        border-radius: 20px;
+    }
+    // .module__item-title
+    &__item-title {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 1.1;
+    }
+    // .module__item-text
+    &__item-text {
+        font-size: 19px;
+        line-height: 1.1;
+    }
+    // .module__item-result
+    &__item-result {
+        background: red;
+
+        p {
+            color: #fff;
+        }
+    }
+}
+
 
 
 .answer {
@@ -479,6 +574,13 @@ section {
     &__slide-icon {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    &__btn {
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
     }
 }
 
