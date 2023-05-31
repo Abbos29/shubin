@@ -52,7 +52,7 @@ section {
 }
 .box__item {
   padding: 25px;
-  border-radius: 20px;
+  border-radius: 10px;
   background: #fafafa;
   color: #000;
 }
@@ -132,13 +132,23 @@ section {
 }
 
 .tarif__item:nth-child(2) {
-  background: red;
+  background: #B00000;
 }
 .tarif__item:nth-child(2) p, .tarif__item:nth-child(2) .box__item-text {
   color: #fff;
 }
 .tarif__item:nth-child(2) .box__item-title::after {
   background: #fff;
+}
+.tarif__item:nth-child(2) .hero__btn {
+  background: #fff;
+  color: #B00000;
+  border: 1px solid #B00000;
+}
+.tarif__item:nth-child(2) .hero__btn:hover {
+  background: #B00000;
+  color: #fff;
+  border: 1px solid #fff;
 }
 .tarif__item .box__item-title {
   max-width: 100%;
@@ -167,7 +177,6 @@ section {
 .tarif__btn-2 {
   max-width: 350px;
   margin: 10px auto 0;
-  background: rgb(83, 167, 196);
 }
 
 .module__wrapper {
@@ -181,8 +190,34 @@ section {
   gap: 30px 30px;
   padding-top: 30px;
 }
+@media (max-width: 920px) {
+  .module__inner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .module__inner {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .module__inner {
+    gap: 10px 10px;
+    padding-top: 15px;
+  }
+}
 .module__item {
   padding: 50px;
+}
+@media (max-width: 768px) {
+  .module__item {
+    padding: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .module__item {
+    padding: 20px;
+  }
 }
 .module__top {
   display: flex;
@@ -205,13 +240,18 @@ section {
   font-weight: 500;
   font-size: 22px;
   line-height: 1.1;
-  color: red;
+  color: #B00000;
   padding-bottom: 15px;
 }
 .module__top-title {
   font-weight: 600;
   font-size: 32px;
   line-height: 1.1;
+}
+@media (max-width: 480px) {
+  .module__top-title {
+    font-size: 28px;
+  }
 }
 .module__top-img {
   max-width: 100px;
@@ -225,7 +265,12 @@ section {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  border-radius: 20px;
+  border-radius: 10px;
+}
+@media (max-width: 480px) {
+  .module__item-list {
+    padding: 12px;
+  }
 }
 .module__item-title {
   font-weight: 600;
@@ -237,7 +282,7 @@ section {
   line-height: 1.1;
 }
 .module__item-result {
-  background: red;
+  background: #B00000;
 }
 .module__item-result p {
   color: #fff;
@@ -389,6 +434,7 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  justify-items: center;
   gap: 20px 50px;
 }
 @media (max-width: 680px) {
@@ -396,7 +442,11 @@ section {
     grid-template-columns: 1fr;
   }
 }
+.about__img {
+  max-width: 500px;
+}
 .about__img img {
+  border-radius: 10px;
   max-width: 100%;
   width: 100%;
 }

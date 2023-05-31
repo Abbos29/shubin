@@ -4,6 +4,10 @@
   border: 0px;
 }
 
+html {
+    scroll-behavior: smooth !important;
+}
+
 *,
 *:before,
 *:after {
@@ -147,7 +151,7 @@ body {
   font-size: 16px;
   color: #fff;
   background: #1F1F1F;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 body.locked {
@@ -274,7 +278,7 @@ body::-webkit-scrollbar-thumb {
   height: 100vh;
   background-image: url(../img/man-1.png);
   background-repeat: no-repeat;
-  background-position: top 100px right;
+  background-position: top 40px right;
   background-size: contain;
 }
 
@@ -404,7 +408,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 19px;
   line-height: 29px;
   color: #fff;
-  border-radius: 30px;
+  border-radius: 10px;
   background: #18b5d8;
   padding: 20px 32px;
   display: -webkit-box;
@@ -442,7 +446,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 26px;
   line-height: 34px;
   padding: 10px 30px;
-  border-radius: 20px;
+  border-radius: 10px;
   background: #000;
   -webkit-box-shadow: 8px 7px 30px 0px rgba(24, 181, 216, 0.2);
           box-shadow: 8px 7px 30px 0px rgba(24, 181, 216, 0.2);
@@ -762,7 +766,7 @@ input[type=button]:focus {
   display: -ms-flexbox;
   display: flex;
   gap: 15px;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .footer__soc-link {
@@ -796,13 +800,13 @@ input[type=button]:focus {
 
 @media (min-width: 1449.98px) {
   .hero {
-    background-position: top 100px right 200px;
+    background-position: top 40px right 200px;
   }
 }
 
 @media (max-width: 1449.98px) {
   .hero {
-    background-position: top 100px right 100px;
+    background-position: top 40px right 100px;
   }
 
   .hero__wrapper {
@@ -812,7 +816,7 @@ input[type=button]:focus {
 
 @media (max-width: 991.98px) {
   .hero {
-    background-position: top 120px right -100px;
+    background-position: top 80px right -100px;
     height: auto;
   }
 
@@ -871,7 +875,7 @@ input[type=button]:focus {
   .hero__btn {
     font-size: 17px;
     line-height: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 20px;
     width: 100%;
     max-width: 100%;
@@ -930,7 +934,7 @@ input[type=button]:focus {
   }
 
   .hero {
-    background-position: top 120px right -100px;
+    background-position: top 70px right -100px;
   }
 
   .hero__top-date {

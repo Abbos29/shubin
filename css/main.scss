@@ -1,3 +1,4 @@
+
 .section-title {
     padding-top: 35px;
     padding-bottom: 30px;
@@ -120,7 +121,7 @@ section {
     // .box__item
     &__item {
         padding: 25px;
-        border-radius: 20px;
+        border-radius: 10px;
         background: #fafafa;
         color: #000;
         
@@ -222,7 +223,7 @@ section {
     &__item {
 
         &:nth-child(2) {
-            background: red;
+            background: #B00000;
 
             p, .box__item-text {
                 color: #fff;
@@ -231,6 +232,18 @@ section {
             .box__item-title {
                 &::after {
                     background: #fff;
+                }
+            }
+
+            .hero__btn {
+                background: #fff;
+                color: #B00000;
+                border: 1px solid #B00000;
+
+                &:hover {
+                    background: #B00000;
+                    color: #fff;
+                    border: 1px solid #fff;
                 }
             }
         }
@@ -266,7 +279,7 @@ section {
     &__btn-2 {
         max-width: 350px;
         margin: 10px auto 0;
-        background: rgb(83, 167, 196);
+        // background: rgb(83, 167, 196);
     }
 }
 
@@ -283,10 +296,28 @@ section {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 30px 30px;
         padding-top: 30px;
+
+        @media (max-width: 920px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+        @media (max-width: 480px) {
+            gap: 10px 10px;
+            padding-top: 15px;
+        }
     }
     // .module__item
     &__item {
         padding: 50px;
+
+        @media (max-width: 768px) {
+            padding: 30px;
+        }
+        @media (max-width: 480px) {
+            padding: 20px;
+        }
     }
     // .module__top
     &__top {
@@ -315,7 +346,7 @@ section {
         font-weight: 500;
         font-size: 22px;
         line-height: 1.1;
-        color: red;
+        color: #B00000;
         padding-bottom: 15px;
     }
     // .module__top-title
@@ -323,6 +354,10 @@ section {
         font-weight: 600;
         font-size: 32px;
         line-height: 1.1;
+
+        @media (max-width: 480px) {
+            font-size: 28px;
+        }
     }
     // .module__top-img
     &__top-img {
@@ -339,7 +374,11 @@ section {
         display: flex;
         flex-direction: column;
         gap: 15px;
-        border-radius: 20px;
+        border-radius: 10px;
+
+        @media (max-width: 480px) {
+            padding: 12px;
+        }
     }
     // .module__item-title
     &__item-title {
@@ -354,7 +393,7 @@ section {
     }
     // .module__item-result
     &__item-result {
-        background: red;
+        background: #B00000;
 
         p {
             color: #fff;
@@ -531,16 +570,19 @@ section {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
+        justify-items: center;
         gap: 20px 50px;
 
         @media (max-width: 680px) {
             grid-template-columns: 1fr;
+
         }
     }
     // .about__img
     &__img {
-
+        max-width: 500px;
         img {
+            border-radius: 10px;
             max-width: 100%;
             width: 100%;
         }
