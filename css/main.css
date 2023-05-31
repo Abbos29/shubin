@@ -17,6 +17,9 @@ section {
     padding-bottom: 40px;
   }
 }
+.hero__wrapper {
+  padding-top: 100px;
+}
 .hero__title {
   font-size: 48px;
   line-height: 1.1;
@@ -36,6 +39,10 @@ section {
     font-size: 18px;
   }
 }
+.hero__bottom-arrow {
+  margin-top: 100px;
+}
+
 .box {
   padding-top: 40px;
   display: grid;
@@ -122,6 +129,25 @@ section {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.for__wrapper {
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 30px;
+}
+.for__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.for__item .box__item-icon {
+  max-width: 150px;
+  padding: 0px;
+  background: none;
+}
+.for__item .box__item-title {
+  font-size: 24px;
+  text-align: center;
 }
 
 .result {
@@ -356,11 +382,15 @@ section {
   animation: fade 0.3s ease;
 }
 .accordion .accordion__item .accordion__item-content .content__text {
+  font-size: 18px;
   margin-top: 25px;
   padding-left: 35px;
 }
 .accordion .accordion__item .accordion__item-content .content__text:first-child {
   margin-top: 0;
+}
+.accordion .accordion__item .accordion__item-content .content__text a {
+  color: #B00000;
 }
 
 .payment {
@@ -486,7 +516,20 @@ section {
 .footer {
   background: #171717;
 }
+.footer__wrapper {
+  justify-content: space-between;
+}
+.footer__box {
+  max-width: none;
+  width: auto;
+}
+.footer__rights {
+  margin-top: 20px;
+}
 .footer__soc-link img {
   max-width: 70px;
   width: 100%;
+}
+.footer__inn {
+  margin-top: 65px;
 }/*# sourceMappingURL=main.css.map */
