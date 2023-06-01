@@ -275,7 +275,7 @@ body::-webkit-scrollbar-thumb {
 
 .hero {
   background: #171717;
-  height: 100vh;
+  /* height: 100vh; */
   background-image: url(../img/man-1.png);
   background-repeat: no-repeat;
   background-position: top 40px right;
@@ -800,7 +800,7 @@ input[type=button]:focus {
 
 @media (min-width: 1449.98px) {
   .hero {
-    background-position: top 40px right 200px;
+    background-position: top 40px right 300px;
   }
 }
 
