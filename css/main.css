@@ -40,7 +40,7 @@ section {
   }
 }
 .hero__bottom-arrow {
-  margin-top: 100px;
+  margin-top: 40px;
 }
 @media (max-width: 480px) {
   .hero__bottom-arrow {
@@ -414,12 +414,13 @@ section {
 .accordion .accordion__item .accordion__item-content {
   padding-bottom: 20px;
   display: none;
-  animation: fade 0.3s ease;
+  -webkit-animation: fade 0.3s ease;
+          animation: fade 0.3s ease;
 }
 .accordion .accordion__item .accordion__item-content .content__text {
   font-size: 22px;
   margin-top: 25px;
-  padding-left: 13px;
+  padding-left: 10px;
 }
 .accordion .accordion__item .accordion__item-content .content__text:first-child {
   margin-top: 0;
@@ -549,6 +550,32 @@ section {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
+}
+.review__btns {
+  max-width: 150px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.swiper-button-prev {
+  position: relative;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.swiper-button-next {
+  position: relative;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .footer {
