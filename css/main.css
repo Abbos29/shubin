@@ -13,7 +13,7 @@ section {
   }
 }
 .hero__wrapper {
-  padding-top: 100px;
+  padding-top: 40px;
 }
 @media (max-width: 768px) {
   .hero__wrapper {
@@ -380,7 +380,7 @@ section {
 .accordion .accordion__item .accordion__item-trigger .trigger__text {
   font-style: normal;
   font-weight: 700;
-  font-size: 23px;
+  font-size: 24px;
   line-height: 1.1;
   letter-spacing: 0.035em;
   color: #fff;
@@ -417,7 +417,7 @@ section {
   animation: fade 0.3s ease;
 }
 .accordion .accordion__item .accordion__item-content .content__text {
-  font-size: 18px;
+  font-size: 22px;
   margin-top: 25px;
   padding-left: 13px;
 }
