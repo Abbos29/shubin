@@ -335,6 +335,7 @@ section {
     }
     &__inner {
         display: grid;
+        align-items: start;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 30px 30px;
         padding-top: 30px;
@@ -735,13 +736,20 @@ section {
     }
     // .footer__rights
     &__rights {
-        margin-top: 20px;
+        margin-top: 10px;
     }
     // .footer__soc
     &__soc {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
     }
     // .footer__soc-link
     &__soc-link {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        gap: 10px;
 
         img {
             max-width: 70px;
@@ -753,6 +761,6 @@ section {
     }
     // .footer__inn
     &__inn {
-        margin-top: 65px;
+        margin-top: 0;
     }
 }
