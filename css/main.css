@@ -139,7 +139,7 @@ section {
 
 .for__wrapper {
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 30px;
+  padding-top: 20px;
 }
 @media (max-width: 920px) {
   .for__wrapper {
@@ -227,11 +227,11 @@ section {
   margin-right: auto;
 }
 .tarif__btn {
-  max-width: 350px;
-  margin: 40px auto 0;
+  max-width: 100%;
+  margin: 30px auto 0;
 }
 .tarif__btn-2 {
-  max-width: 350px;
+  max-width: 100%;
   margin: 10px auto 0;
 }
 
