@@ -415,7 +415,8 @@ section {
 .accordion .accordion__item .accordion__item-content {
   padding-bottom: 20px;
   display: none;
-  animation: fade 0.3s ease;
+  -webkit-animation: fade 0.3s ease;
+          animation: fade 0.3s ease;
 }
 .accordion .accordion__item .accordion__item-content .content__text {
   font-size: 22px;
@@ -534,6 +535,7 @@ section {
 
 .review__swiper {
   padding-top: 50px;
+  max-width: 1090px;
 }
 .review__slide {
   text-align: center;
@@ -562,20 +564,14 @@ section {
   justify-content: space-between;
 }
 
-.swiper-button-prev {
-  position: relative;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-}
-
-.swiper-button-next {
-  position: relative;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
+@media (max-width: 1280px) {
+  .swiper-button-prev, .swiper-button-next {
+    position: relative;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .footer {

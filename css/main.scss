@@ -664,6 +664,7 @@ section {
     // .review__swiper
     &__swiper {
         padding-top: 50px;
+        max-width: 1090px;
     }
     // .review__slider
     &__slider {
@@ -700,19 +701,19 @@ section {
     }
 }
 
+.swiper-button-prev, .swiper-button-next {
+    
+    @media (max-width: 1280px) {
+        position: relative;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+    }
+}
 .swiper-button-prev {
-    position: relative;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
 }
 .swiper-button-next {
-    position: relative;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
 }
 
 
