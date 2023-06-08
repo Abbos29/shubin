@@ -278,7 +278,7 @@ body::-webkit-scrollbar-thumb {
   /* height: 100vh; */
   background-image: url(../img/man-1.png);
   background-repeat: no-repeat;
-  background-position: top 40px right;
+  background-position: top 40px right 50px;
   background-size: contain;
 }
 
@@ -806,7 +806,7 @@ input[type=button]:focus {
 
 @media (max-width: 1449.98px) {
   .hero {
-    background-position: top 0px right 100px;
+    background-position: top 0px right 60px;
   }
 
   .hero__wrapper {
