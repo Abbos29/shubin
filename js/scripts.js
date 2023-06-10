@@ -61,7 +61,11 @@ const swiperReview = new Swiper('.review__swiper', {
     autoHeight: true,
 
     autoplay: {
-        delay: 5000,
+      delay: 5000,
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
     },
 
     // Navigation arrows
@@ -78,9 +82,33 @@ const swiperReview = new Swiper('.review__swiper', {
       spaceBetween: 20
     },
     // when window width is >= 480px
-    768: {
+    1280: {
       slidesPerView: 3,
       spaceBetween: 30
+    },
+  }
+});
+
+
+const swiperAbout = new Swiper('.about__swiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    autoHeight: true,
+
+    autoplay: {
+      delay: 5000,
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Responsive breakpoints
+    breakpoints: {
+    // when window width is >= 320px
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 20
     },
   }
 });

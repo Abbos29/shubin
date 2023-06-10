@@ -2,6 +2,11 @@
   padding-top: 35px;
   padding-bottom: 30px;
 }
+@media (max-width: 480px) {
+  .section-title {
+    text-align: center;
+  }
+}
 
 section {
   padding-bottom: 50px;
@@ -167,6 +172,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 15px;
 }
 .for__item .box__item-icon {
   padding: 0px;
@@ -201,6 +207,9 @@ section {
   .result__wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+.result__item {
+  gap: 15px;
 }
 .result__item .box__item-icon {
   border: 10px solid #171717;
@@ -439,8 +448,7 @@ section {
 .accordion .accordion__item .accordion__item-content {
   padding-bottom: 20px;
   display: none;
-  -webkit-animation: fade 0.3s ease;
-          animation: fade 0.3s ease;
+  animation: fade 0.3s ease;
 }
 .accordion .accordion__item .accordion__item-content .content__text {
   font-size: 22px;
@@ -556,10 +564,21 @@ section {
     font-size: 18px;
   }
 }
+.about__swiper {
+  max-width: 500px;
+  width: 100%;
+  padding-bottom: 40px;
+}
 
 .review__swiper {
   padding-top: 50px;
+  padding-bottom: 30px;
   max-width: 1090px;
+}
+@media (max-width: 768px) {
+  .review__slider {
+    padding-bottom: 30px;
+  }
 }
 .review__slide {
   text-align: center;
@@ -581,13 +600,24 @@ section {
   max-width: 150px;
   width: 100%;
   margin: 0 auto;
-  margin-top: 60px;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
+@media (max-width: 1280px) {
+  .review__btns {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .review__btns {
+    display: none;
+  }
+}
+.swiper-button-prev, .swiper-button-next {
+  display: none;
+}
 @media (max-width: 1280px) {
   .swiper-button-prev, .swiper-button-next {
     position: relative;
@@ -598,11 +628,22 @@ section {
   }
 }
 
+.swiper-pagination-bullet {
+  background: #fff;
+}
+
+.swiper-pagination-bullet-active {
+  background: #18b5d8;
+}
+
 .footer {
   background: #171717;
 }
 .footer__wrapper {
   justify-content: space-between;
+  max-width: 990px;
+  width: 100%;
+  margin: 0 auto;
 }
 .footer__box {
   max-width: none;
@@ -610,7 +651,6 @@ section {
 }
 .footer__box p, .footer__box a {
   font-size: 15px !important;
-  text-decoration: underline;
 }
 .footer__logo {
   position: relative;
@@ -660,6 +700,7 @@ section {
 .footer__policy {
   display: block;
   padding-bottom: 5px;
+  text-decoration: underline;
 }
 .footer__inn {
   font-style: normal;
