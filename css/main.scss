@@ -778,9 +778,13 @@ section {
         // grid-template-columns: 1fr 1fr 180px 1fr;
         justify-content: space-between;
 
-        max-width: 990px;
-        width: 100%;
-        margin: 0 auto;
+        @media (max-width: 480px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+        }
     }
     // .footer__box
     &__box {
