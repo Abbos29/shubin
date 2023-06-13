@@ -278,7 +278,25 @@
                     <li class="box__item-text"><span>Итоговая аттестация</span></li>
                 </ul>
                 <a class="tarif__btn hero__btn" href="#" id="pay">ОПЛАТИТЬ</a>
-                <a class="tarif__btn-2 hero__btn" href="#">ОФОРМИТЬ РАССРОЧКУ</a>
+                <!-- <a class="tarif__btn-2 hero__btn" href="#">ОФОРМИТЬ РАССРОЧКУ</a> -->
+
+                <button
+                    class="tarif__btn hero__btn"
+                    type="button"
+                    class="TINKOFF_BTN_YELLOW TINKOFF_SIZE_L"
+                    onclick="tinkoff.create(
+                        {
+                        sum: 10000,
+                        items: [{name: 'Apple TV', price: 10000, quantity: 1}],
+                        promoCode: 'default',
+                        shopId: 'SHOP_ID',
+                        showcaseId: 'SHOWCASE_ID',
+                        },
+                        {view: 'newTab'}
+                    )"
+                    >ОФОРМИТЬ РАССРОЧКУ
+                </button>
+
             </div>
 
             <div class="tarif__item box__item">
@@ -301,7 +319,24 @@
                     <li class="box__item-text"><span>Стажировка 1 месяц</span></li>
                 </ul>
                 <a class="tarif__btn hero__btn" href="#">ОПЛАТИТЬ</a>
-                <a class="tarif__btn-2 hero__btn" href="#">ОФОРМИТЬ РАССРОЧКУ</a>
+                <!-- <a class="tarif__btn-2 hero__btn" href="#">ОФОРМИТЬ РАССРОЧКУ</a> -->
+
+                <button
+                    class="tarif__btn hero__btn"
+                    type="button"
+                    class="TINKOFF_BTN_YELLOW TINKOFF_SIZE_L"
+                    onclick="tinkoff.create(
+                        {
+                        sum: 10000,
+                        items: [{name: 'Apple TV', price: 10000, quantity: 1}],
+                        promoCode: 'default',
+                        shopId: 'SHOP_ID',
+                        showcaseId: 'SHOWCASE_ID',
+                        },
+                        {view: 'newTab'}
+                    )"
+                    >ОФОРМИТЬ РАССРОЧКУ
+                </button>
             </div>
         </div>
     </div>
@@ -986,6 +1021,7 @@
 
 </body>
 
+<script src="https://forma.tinkoff.ru/static/onlineScript.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="./js/scripts.js"></script>

@@ -337,12 +337,11 @@ section {
 
     &__btn {
         max-width: 100%;
-        margin: 30px auto 0;
+        margin: 10px auto 0px;
+        width: 100%;
+        font-family: "Nunito", sans-serif;
     }
     &__btn-2 {
-        max-width: 100%;
-        margin: 10px auto 0;
-        // background: rgb(83, 167, 196);
     }
 }
 
