@@ -445,8 +445,7 @@ section {
 .accordion .accordion__item .accordion__item-content {
   padding-bottom: 20px;
   display: none;
-  -webkit-animation: fade 0.3s ease;
-          animation: fade 0.3s ease;
+  animation: fade 0.3s ease;
 }
 .accordion .accordion__item .accordion__item-content .content__text {
   font-size: 22px;
