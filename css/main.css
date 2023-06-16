@@ -1,3 +1,7 @@
+.main__body {
+  overflow-x: hidden;
+}
+
 .section-title {
   padding-top: 35px;
   padding-bottom: 30px;
@@ -215,6 +219,19 @@ section {
   border: 10px solid #171717;
 }
 
+.tarif__wrapper {
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 1200px) {
+  .tarif__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .tarif__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
 .tarif__item:nth-child(2) {
   background: #B00000;
 }
@@ -586,6 +603,7 @@ section {
   margin-left: auto;
   margin-right: auto;
   padding: 5px;
+  border-radius: 10px;
 }
 .review__btn {
   max-width: 300px;

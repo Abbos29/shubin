@@ -1,4 +1,8 @@
 
+.main__body {
+    overflow-x: hidden;
+}
+
 .section-title {
     padding-top: 35px;
     padding-bottom: 30px;
@@ -281,6 +285,14 @@ section {
 .tarif {
     // .tarif__wrapper
     &__wrapper {
+        grid-template-columns: repeat(3, 1fr);
+
+        @media (max-width: 1200px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
     }
     // .tarif__item
     &__item {
@@ -715,6 +727,7 @@ section {
         margin-left: auto;
         margin-right: auto;
         padding: 5px;
+        border-radius: 10px;
     }
 
     &__btn {
