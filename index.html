@@ -19,6 +19,7 @@
     <link rel="icon" href="./img/favicon.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./magnific/magnific-popup.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -54,7 +55,7 @@
                 </p>
     
                 <div class="hero__btns">
-                    <a class="modal__btn hero__btn" href="#pay">ПРИНЯТЬ УЧАСТИЕ</a>
+                    <a class="hero__btn" href="#pay">ПРИНЯТЬ УЧАСТИЕ</a>
     
                     <!-- <svg class="hero__btn-arrow" viewBox="0 0 243.84 75.68" width="70" height="20" fill="white"><polygon class="cls-1" points="206 0 201.76 4.24 232.36 34.84 0 34.84 0 40.84 232.36 40.84 201.76 71.43 206 75.67 243.84 37.84 206 0"/> </g> </g> </svg> -->
     
@@ -102,33 +103,6 @@
             <img src="./img/icons/arrow-bottom.svg" alt="arrow-bottom">
         </div>
 
-    </div>
-
-    <!-- Modal -->
-    <div class="modal__wrapper">
-        <div class="modal">
-            <div class="modal__close"> <img src="./img/cancel.svg" alt="cancel" width="10px" height="10px"></div>
-            <div class="modal__body">
-                <p class="modal__title">Зарегистрируйся сейчас!</p>
-
-                <form class="contact-form" id="contact-form">
-                    <input type="text" placeholder="Имя"/>
-
-                    <input type="email" placeholder="Email"/>
-
-                    <input type="tel" placeholder="Номер"/>
-
-                    <input type="text" placeholder="Город"/>
-
-                    <input type="button" value="Принять участие"/>
-                </form>
-
-                <div class="modal__checkbox">
-                    <input type="checkbox">
-                    <p class="modal__checkbox-text">Даю согласие на обработку персональных данных в соответствии с политикой </p>
-                </div>
-            </div>
-        </div>
     </div>
 
 </section>
@@ -258,6 +232,7 @@
 <section class="tarif">
     <div class="container">
         <p class="section-title" data-aos="fade-right">Тарифы</p>
+
         <div class="tarif__wrapper box" data-aos="fade-up">
             <div class="tarif__item box__item">
                 <div class="box__item-icon">
@@ -277,8 +252,9 @@
                     <li class="box__item-text"><span>Модуль 11.</span> Создание сайта</li>
                     <li class="box__item-text"><span>Итоговая аттестация</span></li>
                 </ul>
-                <a class="tarif__btn hero__btn" href="https://shubin.guru/kurs/pay-basic.html" id="pay">ОПЛАТИТЬ</a>
-                <!-- <a class="tarif__btn-2 hero__btn" href="#">ОФОРМИТЬ РАССРОЧКУ</a> -->
+                <!-- <a class="tarif__btn hero__btn" href="https://shubin.guru/kurs/pay-basic.html" id="pay">ОПЛАТИТЬ</a> -->
+                
+                <a class="tarif__btn hero__btn modal__btn" id="btn1">ОПЛАТИТЬ</a>
 
                 <button
                     class="tarif__btn hero__btn"
@@ -296,7 +272,6 @@
                     )"
                     >ОФОРМИТЬ РАССРОЧКУ
                 </button>
-
             </div>
 
             <div class="tarif__item box__item">
@@ -320,8 +295,9 @@
                     <li class="box__item-text"><span>Стажировка 1 месяц после окончания обучения</span></li>
 					<li class="box__item-text"><span>Всего 2 места</span></li>
                 </ul>
-                <a class="tarif__btn hero__btn" href="https://shubin.guru/kurs/pay-pro.html">ОПЛАТИТЬ</a>
-                <!-- <a class="tarif__btn-2 hero__btn" href="#">ОФОРМИТЬ РАССРОЧКУ</a> -->
+                <!-- <a class="tarif__btn hero__btn" href="https://shubin.guru/kurs/pay-pro.html">ОПЛАТИТЬ</a> -->
+                
+                <a class="tarif__btn hero__btn modal__btn" id="btn2">ОПЛАТИТЬ</a>
 
                 <button
                     class="tarif__btn hero__btn"
@@ -363,8 +339,9 @@
 					<li class="box__item-text"><span>Полностью индивидуальная работа и обучение</span></li>
 					<li class="box__item-text"><span>Всего 1 место</span></li>
                 </ul>
-                <a class="tarif__btn hero__btn" href="https://shubin.guru/kurs/pay-individual.html">ОПЛАТИТЬ</a>
-                <!-- <a class="tarif__btn-2 hero__btn" href="#">ОФОРМИТЬ РАССРОЧКУ</a> -->
+                <!-- <a class="tarif__btn hero__btn" href="https://shubin.guru/kurs/pay-individual.html">ОПЛАТИТЬ</a> -->
+
+                <a class="tarif__btn hero__btn modal__btn" id="btn3">ОПЛАТИТЬ</a>
 
                 <button
                     class="tarif__btn hero__btn"
@@ -382,7 +359,6 @@
                     )"
                     >ОФОРМИТЬ РАССРОЧКУ
                 </button>
-
             </div>
         </div>
     </div>
@@ -1077,11 +1053,79 @@
     </div>
 </footer>
 
+<!-- MODALS -->
+
+<div id="modal1" class="mfp-hide">
+    <div class="tinkoffPayWidget">
+        <form name="TinkoffPayForm" class="tinkoffPayForm"  onsubmit="pay(this); return false;">
+            <p class="modal__title">Тариф «Базовый»</p>
+            <input class="tinkoffPayRow" type="hidden" name="terminalkey" value="1686482332991">
+            <input class="tinkoffPayRow" type="hidden" name="frame" value="false">
+            <input class="tinkoffPayRow" type="hidden" name="language" value="ru">
+            <input class="tinkoffPayRow" type="hidden" placeholder="Номер заказа" name="order">
+            <input class="tinkoffPayRow" type="text" placeholder="Сумма заказа" id="tinkoffAmount" name="amount" value="59900" required readonly>
+            <input class="tinkoffPayRow" type="hidden" placeholder="Описание заказа" name="description">
+            <input class="tinkoffPayRow" type="text" placeholder="ФИО плательщика" name="name" >
+            <input class="tinkoffPayRow" type="text" placeholder="E-mail" id="tinkoffEmail" name="email" required>
+            <input class="tinkoffPayRow" type="text" placeholder="Телефон" id="tinkoffPhone" name="phone">
+            <input class="tinkoffPayRow" type="hidden" id="tinkoffReceipt" name="receipt" value=''>
+            <input style="background-color: #ffdd2d;" class="tinkoffPayRow payBtn" type="submit"  value="Оплатить">
+        </form>
+    </div>
+</div>
+
+
+<div id="modal2" class="mfp-hide">
+    <div class="tinkoffPayWidget">
+        <form name="TinkoffPayForm" class="tinkoffPayForm"  onsubmit="pay(this); return false;">
+            <p class="modal__title">Тариф «Про»</p>
+            <input class="tinkoffPayRow" type="hidden" name="terminalkey" value="1686482332991">
+            <input class="tinkoffPayRow" type="hidden" name="frame" value="false">
+            <input class="tinkoffPayRow" type="hidden" name="language" value="ru">
+            <input class="tinkoffPayRow" type="hidden" placeholder="Номер заказа" name="order">
+            <input class="tinkoffPayRow" type="text" placeholder="Сумма заказа" id="tinkoffAmount" name="amount" value="89900" required readonly>
+            <input class="tinkoffPayRow" type="hidden" placeholder="Описание заказа" name="description">
+            <input class="tinkoffPayRow" type="text" placeholder="ФИО плательщика" name="name" >
+            <input class="tinkoffPayRow" type="text" placeholder="E-mail" id="tinkoffEmail" name="email" required>
+            <input class="tinkoffPayRow" type="text" placeholder="Телефон" id="tinkoffPhone" name="phone">
+            <input class="tinkoffPayRow" type="hidden" id="tinkoffReceipt" name="receipt" value=''>
+            <input style="background-color: #ffdd2d;" class="tinkoffPayRow payBtn" type="submit"  value="Оплатить">
+        </form>
+    </div>
+</div>
+
+
+<div id="modal3" class="mfp-hide">
+    <div class="tinkoffPayWidget">
+        <form name="TinkoffPayForm" class="tinkoffPayForm"  onsubmit="pay(this); return false;">
+            <p class="modal__title">Тариф «Индивидуальный»</p>
+            <input class="tinkoffPayRow" type="hidden" name="terminalkey" value="1686482332991">
+            <input class="tinkoffPayRow" type="hidden" name="frame" value="false">
+            <input class="tinkoffPayRow" type="hidden" name="language" value="ru">
+            <input class="tinkoffPayRow" type="hidden" placeholder="Номер заказа" name="order">
+            <input class="tinkoffPayRow" type="text" placeholder="Сумма заказа" id="tinkoffAmount" name="amount" value="149900" required readonly>
+            <input class="tinkoffPayRow" type="hidden" placeholder="Описание заказа" name="description">
+            <input class="tinkoffPayRow" type="text" placeholder="ФИО плательщика" name="name" >
+            <input class="tinkoffPayRow" type="text" placeholder="E-mail" id="tinkoffEmail" name="email" required>
+            <input class="tinkoffPayRow" type="text" placeholder="Телефон" id="tinkoffPhone" name="phone">
+            <input class="tinkoffPayRow" type="hidden" id="tinkoffReceipt" name="receipt" value=''>
+            <input style="background-color: #ffdd2d;" class="tinkoffPayRow payBtn" type="submit"  value="Оплатить">
+        </form>
+    </div>
+  
+</div>
+
+
 </body>
 
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+<script src="https://securepay.tinkoff.ru/html/payForm/js/tinkoff_v2.js"></script>
 <script src="https://forma.tinkoff.ru/static/onlineScript.js"></script>
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="./js/scripts.js"></script>
+<script src="./magnific/jquery.magnific-popup.min.js"></script>
 
 </html>

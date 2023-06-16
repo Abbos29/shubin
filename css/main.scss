@@ -108,6 +108,11 @@ section {
     }
     // .modal__title
     &__title {
+        color: #000;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 1.1;
+        padding-bottom: 20px;
     }
     // .modal__checkbox
     &__checkbox {
@@ -116,7 +121,34 @@ section {
     &__checkbox-text {
     }
 }
+
+
 .contact-form {
+    max-width: 100%;
+    min-width: 50%;
+    display: flex;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    outline: none;
+    max-width: 100%;
+    padding: 5px 0 18px;
+    margin-bottom: 30px;
+    background: none;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    border-bottom: 2px solid #8E8E8E;
 }
 
 
@@ -296,6 +328,7 @@ section {
     }
     // .tarif__item
     &__item {
+        position: relative;
 
         &:nth-child(2) {
             background: #B00000;
@@ -352,8 +385,11 @@ section {
         margin: 10px auto 0px;
         width: 100%;
         font-family: "Nunito", sans-serif;
+
+        cursor: pointer;
     }
     &__btn-2 {
+        cursor: pointer;
     }
 }
 
@@ -869,4 +905,55 @@ section {
         top: -5px;
 
     }
+}
+
+
+
+// TINKOFF
+
+.tinkoffPayWidget{
+    width: 50%;
+    min-width: 25rem;
+    max-width: 40rem;
+    margin: 0 auto;
+    }
+.tinkoffPayForm{
+    padding: 1rem 1.5rem 1rem 1rem;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.tinkoffPayRow {
+    width: 100%;
+    font-family: 'Nunito',sans-serif;
+    box-sizing: border-box;
+    transition: 0.3s;
+    border: 1px solid #ecf1f7;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 5px;
+    outline: none;
+    background-color: #ecf1f7;
+    resize: none;
+    color: rgba(0, 0, 0, 0.664);
+    font-size: 15px;
+}
+.tinkoffPayRow:focus{
+    background-color: white;
+    border: 1px solid #616871;
+    border-radius: 4px;
+}
+.payBtn{
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.4s;
+    border: 0;
+    text-transform: uppercase;
+    background-color: #ffdd2d;
+    padding: 15px;
+    cursor: pointer;
+}
+.payBtn:hover{
+    background-color: #fcc521;
 }
