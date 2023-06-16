@@ -90,7 +90,8 @@ const swiperAbout = new Swiper('.about__swiper', {
 $(document).ready(function() {
   // Инициализируем Magnific Popup
   $('.modal-link').magnificPopup({
-    type: 'inline'
+    type: 'inline',
+    closeMarkup: '<button title="%title%" class="mfp-close">×</button>'
   });
 
   // Функция для открытия модального окна 1
@@ -122,4 +123,35 @@ $(document).ready(function() {
       type: 'inline'
     });
   });
+
+  // Функция для открытия модального окна 4
+  $('#btn4').on('click', function() {
+    $.magnificPopup.open({
+      items: {
+        src: '#modal4'
+      },
+      type: 'inline'
+    });
+  });
+
+  // Функция для открытия модального окна 5
+  $('#btn5').on('click', function() {
+    $.magnificPopup.open({
+      items: {
+        src: '#modal5'
+      },
+      type: 'inline'
+    });
+  });
+
+  // Функция для открытия модального окна 6
+  $('#btn6').on('click', function() {
+    $.magnificPopup.open({
+      items: {
+        src: '#modal6'
+      },
+      type: 'inline'
+    });
+  });
 });
+

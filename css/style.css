@@ -537,7 +537,7 @@ input[type=text],
 input[type=email],
 input[type=tel],
 textarea {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
   outline: none;
@@ -548,7 +548,7 @@ textarea {
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
-  border-bottom: 2px solid #8E8E8E;
+  border-bottom: 2px solid #8E8E8E; */
 }
 
 input[type=text]::-webkit-input-placeholder, input[type=email]::-webkit-input-placeholder, input[type=tel]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {

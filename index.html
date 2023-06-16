@@ -256,7 +256,9 @@
                 
                 <a class="tarif__btn hero__btn modal__btn" id="btn1">ОПЛАТИТЬ</a>
 
-                <button
+                <a class="tarif__btn hero__btn modal__btn" id="btn4">ОФОРМИТЬ РАССРОЧКУ</a>
+
+                <!-- <button
                     class="tarif__btn hero__btn"
                     type="button"
                     class="TINKOFF_BTN_YELLOW TINKOFF_SIZE_L"
@@ -271,7 +273,7 @@
                         {view: 'newTab'}
                     )"
                     >ОФОРМИТЬ РАССРОЧКУ
-                </button>
+                </button> -->
             </div>
 
             <div class="tarif__item box__item">
@@ -299,7 +301,9 @@
                 
                 <a class="tarif__btn hero__btn modal__btn" id="btn2">ОПЛАТИТЬ</a>
 
-                <button
+                <a class="tarif__btn hero__btn modal__btn" id="btn5">ОФОРМИТЬ РАССРОЧКУ</a>
+
+                <!-- <button
                     class="tarif__btn hero__btn"
                     type="button"
                     class="TINKOFF_BTN_YELLOW TINKOFF_SIZE_L"
@@ -314,7 +318,7 @@
                         {view: 'newTab'}
                     )"
                     >ОФОРМИТЬ РАССРОЧКУ
-                </button>
+                </button> -->
             </div>
 			
 			<div class="tarif__item box__item">
@@ -343,7 +347,9 @@
 
                 <a class="tarif__btn hero__btn modal__btn" id="btn3">ОПЛАТИТЬ</a>
 
-                <button
+                <a class="tarif__btn hero__btn modal__btn" id="btn6">ОФОРМИТЬ РАССРОЧКУ</a>
+
+                <!-- <button
                     class="tarif__btn hero__btn"
                     type="button"
                     class="TINKOFF_BTN_YELLOW TINKOFF_SIZE_L"
@@ -358,7 +364,7 @@
                         {view: 'newTab'}
                     )"
                     >ОФОРМИТЬ РАССРОЧКУ
-                </button>
+                </button> -->
             </div>
         </div>
     </div>
@@ -878,7 +884,7 @@
                         </div> -->
                         <img class="box__item-icon review__slide-icon" src="./img/review-3.png" alt="review">
                         <p class="box__item-title">Олеся Скопинцева</p>
-                        <p class="box__item-text">Если хотите изучить интернет-маркетинг в деталях, быстро освоить все необходимые навыки и умения, то этот курс - для вас! Структура обучения построена логично и понятно, преподаватели - настоящие профессионалы своего дела. Больше всего понравилась практическая составляющая: кураторы не только помогали в выполнении заданий, но и давали индивидуальные рекомендации.</p>
+                        <p class="box__item-text">Очень информативный курс, подробный разбор инструментов. Подача материала🔥. Очень приятно, что ты не просто дал  материал, а всей душой болел за нас, пока мы погружались в мир интернет-маркетинга, радовался за наши успехи, наставлял. Спасибо за новые знания и вовлечённость в процесс 🙂 Обязательно рекомендую тем, кому интересна тема и кто готов выйти из зоны комфорта😉</p>
                         <a class="box__item-link" href="#">Посмотреть видеоотзыв</a>
                     </div>
 
@@ -1058,18 +1064,21 @@
 <div id="modal1" class="mfp-hide">
     <div class="tinkoffPayWidget">
         <form name="TinkoffPayForm" class="tinkoffPayForm"  onsubmit="pay(this); return false;">
-            <p class="modal__title">Тариф «Базовый»</p>
+            <div class="modal__top">
+                <p class="modal__title">Тариф «Базовый»</p>
+                <button title="Закрыть" class="mfp-close">×</button>
+            </div>
             <input class="tinkoffPayRow" type="hidden" name="terminalkey" value="1686482332991">
             <input class="tinkoffPayRow" type="hidden" name="frame" value="false">
             <input class="tinkoffPayRow" type="hidden" name="language" value="ru">
             <input class="tinkoffPayRow" type="hidden" placeholder="Номер заказа" name="order">
             <input class="tinkoffPayRow" type="text" placeholder="Сумма заказа" id="tinkoffAmount" name="amount" value="59900" required readonly>
             <input class="tinkoffPayRow" type="hidden" placeholder="Описание заказа" name="description">
-            <input class="tinkoffPayRow" type="text" placeholder="ФИО плательщика" name="name" >
+            <input class="tinkoffPayRow" type="text" placeholder="ФИО плательщика" name="name" required>
             <input class="tinkoffPayRow" type="text" placeholder="E-mail" id="tinkoffEmail" name="email" required>
-            <input class="tinkoffPayRow" type="text" placeholder="Телефон" id="tinkoffPhone" name="phone">
+            <input class="tinkoffPayRow" type="text" placeholder="Телефон" id="tinkoffPhone" name="phone" required>
             <input class="tinkoffPayRow" type="hidden" id="tinkoffReceipt" name="receipt" value=''>
-            <input style="background-color: #ffdd2d;" class="tinkoffPayRow payBtn" type="submit"  value="Оплатить">
+            <input class="hero__btn" type="submit"  value="Оплатить">
         </form>
     </div>
 </div>
@@ -1078,18 +1087,21 @@
 <div id="modal2" class="mfp-hide">
     <div class="tinkoffPayWidget">
         <form name="TinkoffPayForm" class="tinkoffPayForm"  onsubmit="pay(this); return false;">
-            <p class="modal__title">Тариф «Про»</p>
+            <div class="modal__top">
+                <p class="modal__title">Тариф «Про»</p>
+                <button title="Закрыть" class="mfp-close">×</button>
+            </div>
             <input class="tinkoffPayRow" type="hidden" name="terminalkey" value="1686482332991">
             <input class="tinkoffPayRow" type="hidden" name="frame" value="false">
             <input class="tinkoffPayRow" type="hidden" name="language" value="ru">
             <input class="tinkoffPayRow" type="hidden" placeholder="Номер заказа" name="order">
             <input class="tinkoffPayRow" type="text" placeholder="Сумма заказа" id="tinkoffAmount" name="amount" value="89900" required readonly>
             <input class="tinkoffPayRow" type="hidden" placeholder="Описание заказа" name="description">
-            <input class="tinkoffPayRow" type="text" placeholder="ФИО плательщика" name="name" >
+            <input class="tinkoffPayRow" type="text" placeholder="ФИО плательщика" name="name" required>
             <input class="tinkoffPayRow" type="text" placeholder="E-mail" id="tinkoffEmail" name="email" required>
-            <input class="tinkoffPayRow" type="text" placeholder="Телефон" id="tinkoffPhone" name="phone">
+            <input class="tinkoffPayRow" type="text" placeholder="Телефон" id="tinkoffPhone" name="phone" required>
             <input class="tinkoffPayRow" type="hidden" id="tinkoffReceipt" name="receipt" value=''>
-            <input style="background-color: #ffdd2d;" class="tinkoffPayRow payBtn" type="submit"  value="Оплатить">
+            <input class="hero__btn" type="submit"  value="Оплатить">
         </form>
     </div>
 </div>
@@ -1098,21 +1110,207 @@
 <div id="modal3" class="mfp-hide">
     <div class="tinkoffPayWidget">
         <form name="TinkoffPayForm" class="tinkoffPayForm"  onsubmit="pay(this); return false;">
-            <p class="modal__title">Тариф «Индивидуальный»</p>
+            <div class="modal__top">
+                <p class="modal__title">Тариф «Индивидуальный»</p>
+                <button title="Закрыть" class="mfp-close">×</button>
+            </div>
             <input class="tinkoffPayRow" type="hidden" name="terminalkey" value="1686482332991">
             <input class="tinkoffPayRow" type="hidden" name="frame" value="false">
             <input class="tinkoffPayRow" type="hidden" name="language" value="ru">
             <input class="tinkoffPayRow" type="hidden" placeholder="Номер заказа" name="order">
             <input class="tinkoffPayRow" type="text" placeholder="Сумма заказа" id="tinkoffAmount" name="amount" value="149900" required readonly>
             <input class="tinkoffPayRow" type="hidden" placeholder="Описание заказа" name="description">
-            <input class="tinkoffPayRow" type="text" placeholder="ФИО плательщика" name="name" >
+            <input class="tinkoffPayRow" type="text" placeholder="ФИО плательщика" name="name" required>
             <input class="tinkoffPayRow" type="text" placeholder="E-mail" id="tinkoffEmail" name="email" required>
-            <input class="tinkoffPayRow" type="text" placeholder="Телефон" id="tinkoffPhone" name="phone">
+            <input class="tinkoffPayRow" type="text" placeholder="Телефон" id="tinkoffPhone" name="phone" required>
             <input class="tinkoffPayRow" type="hidden" id="tinkoffReceipt" name="receipt" value=''>
-            <input style="background-color: #ffdd2d;" class="tinkoffPayRow payBtn" type="submit"  value="Оплатить">
+            <input class="hero__btn" type="submit"  value="Оплатить">
         </form>
     </div>
-  
+</div>
+
+
+<div id="modal4" class="mfp-hide">
+    <div class="tinkoffPayWidget tinkoffPayForm">
+        <div class="modal__top">
+            <p class="modal__title">Тариф «Базовый»</p>
+            <button title="Закрыть" class="mfp-close">×</button>
+        </div>
+
+        <button
+            class="tarif__btn hero__btn"
+            type="button"
+            class="TINKOFF_BTN_YELLOW TINKOFF_SIZE_L"
+            onclick="tinkoff.create(
+                {
+                sum: 59900,
+                items: [{name: 'Курс по интернет-маркетингу Тариф Базовый', price: 59900, quantity: 1}],
+                promoCode: 'installment_0_0_3_4',
+                shopId: '8101ffd5-6ea6-4f5e-8627-ad7d4b9dac46',
+                showcaseId: '4b8e7611-7b03-4652-be69-e53b56f570b5',
+                },
+                {view: 'newTab'}
+            )"
+            >Рассрочка на 3 месяца
+        </button>
+
+        <button
+            class="tarif__btn hero__btn"
+            type="button"
+            class="TINKOFF_BTN_YELLOW TINKOFF_SIZE_L"
+            onclick="tinkoff.create(
+                {
+                sum: 59900,
+                items: [{name: 'Курс по интернет-маркетингу Тариф Базовый', price: 59900, quantity: 1}],
+                promoCode: 'installment_0_0_6_6,5',
+                shopId: '8101ffd5-6ea6-4f5e-8627-ad7d4b9dac46',
+                showcaseId: '4b8e7611-7b03-4652-be69-e53b56f570b5',
+                },
+                {view: 'newTab'}
+            )"
+            >Рассрочка на 6 месяца
+        </button>
+
+        <button
+            class="tarif__btn hero__btn"
+            type="button"
+            class="TINKOFF_BTN_YELLOW TINKOFF_SIZE_L"
+            onclick="tinkoff.create(
+                {
+                sum: 59900,
+                items: [{name: 'Курс по интернет-маркетингу Тариф Базовый', price: 59900, quantity: 1}],
+                promoCode: 'installment_0_0_12_11,5',
+                shopId: '8101ffd5-6ea6-4f5e-8627-ad7d4b9dac46',
+                showcaseId: '4b8e7611-7b03-4652-be69-e53b56f570b5',
+                },
+                {view: 'newTab'}
+            )"
+            >Рассрочка на 12 месяца
+        </button>
+        
+    </div>
+</div>
+
+<div id="modal5" class="mfp-hide">
+    <div class="tinkoffPayWidget tinkoffPayForm">
+        <div class="modal__top">
+            <p class="modal__title">Тариф «Про»</p>
+            <button title="Закрыть" class="mfp-close">×</button>
+        </div>
+
+        <button
+            class="tarif__btn hero__btn"
+            type="button"
+            class="TINKOFF_BTN_YELLOW TINKOFF_SIZE_L"
+            onclick="tinkoff.create(
+                {
+                sum: 89900,
+                items: [{name: 'Курс по интернет-маркетингу Тариф Базовый', price: 89900, quantity: 1}],
+                promoCode: 'installment_0_0_3_4',
+                shopId: '8101ffd5-6ea6-4f5e-8627-ad7d4b9dac46',
+                showcaseId: '4b8e7611-7b03-4652-be69-e53b56f570b5',
+                },
+                {view: 'newTab'}
+            )"
+            >Рассрочка на 3 месяца
+        </button>
+
+        <button
+            class="tarif__btn hero__btn"
+            type="button"
+            class="TINKOFF_BTN_YELLOW TINKOFF_SIZE_L"
+            onclick="tinkoff.create(
+                {
+                sum: 89900,
+                items: [{name: 'Курс по интернет-маркетингу Тариф Базовый', price: 89900, quantity: 1}],
+                promoCode: 'installment_0_0_6_6,5',
+                shopId: '8101ffd5-6ea6-4f5e-8627-ad7d4b9dac46',
+                showcaseId: '4b8e7611-7b03-4652-be69-e53b56f570b5',
+                },
+                {view: 'newTab'}
+            )"
+            >Рассрочка на 6 месяца
+        </button>
+
+        <button
+            class="tarif__btn hero__btn"
+            type="button"
+            class="TINKOFF_BTN_YELLOW TINKOFF_SIZE_L"
+            onclick="tinkoff.create(
+                {
+                sum: 89900,
+                items: [{name: 'Курс по интернет-маркетингу Тариф Базовый', price: 89900, quantity: 1}],
+                promoCode: 'installment_0_0_12_11,5',
+                shopId: '8101ffd5-6ea6-4f5e-8627-ad7d4b9dac46',
+                showcaseId: '4b8e7611-7b03-4652-be69-e53b56f570b5',
+                },
+                {view: 'newTab'}
+            )"
+            >Рассрочка на 12 месяца
+        </button>
+        
+    </div>
+</div>
+
+<div id="modal6" class="mfp-hide">
+    <div class="tinkoffPayWidget tinkoffPayForm">
+        <div class="modal__top">
+            <p class="modal__title">Тариф «Индивидуальный»</p>
+            <button title="Закрыть" class="mfp-close">×</button>
+        </div>
+
+        <button
+            class="tarif__btn hero__btn"
+            type="button"
+            class="TINKOFF_BTN_YELLOW TINKOFF_SIZE_L"
+            onclick="tinkoff.create(
+                {
+                sum: 149900,
+                items: [{name: 'Курс по интернет-маркетингу Тариф Базовый', price: 149900, quantity: 1}],
+                promoCode: 'installment_0_0_3_4',
+                shopId: '8101ffd5-6ea6-4f5e-8627-ad7d4b9dac46',
+                showcaseId: '4b8e7611-7b03-4652-be69-e53b56f570b5',
+                },
+                {view: 'newTab'}
+            )"
+            >Рассрочка на 3 месяца
+        </button>
+
+        <button
+            class="tarif__btn hero__btn"
+            type="button"
+            class="TINKOFF_BTN_YELLOW TINKOFF_SIZE_L"
+            onclick="tinkoff.create(
+                {
+                sum: 149900,
+                items: [{name: 'Курс по интернет-маркетингу Тариф Базовый', price: 149900, quantity: 1}],
+                promoCode: 'installment_0_0_6_6,5',
+                shopId: '8101ffd5-6ea6-4f5e-8627-ad7d4b9dac46',
+                showcaseId: '4b8e7611-7b03-4652-be69-e53b56f570b5',
+                },
+                {view: 'newTab'}
+            )"
+            >Рассрочка на 6 месяца
+        </button>
+
+        <button
+            class="tarif__btn hero__btn"
+            type="button"
+            class="TINKOFF_BTN_YELLOW TINKOFF_SIZE_L"
+            onclick="tinkoff.create(
+                {
+                sum: 149900,
+                items: [{name: 'Курс по интернет-маркетингу Тариф Базовый', price: 149900, quantity: 1}],
+                promoCode: 'installment_0_0_12_11,5',
+                shopId: '8101ffd5-6ea6-4f5e-8627-ad7d4b9dac46',
+                showcaseId: '4b8e7611-7b03-4652-be69-e53b56f570b5',
+                },
+                {view: 'newTab'}
+            )"
+            >Рассрочка на 12 месяца
+        </button>
+        
+    </div>
 </div>
 
 
