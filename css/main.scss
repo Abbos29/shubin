@@ -748,7 +748,7 @@ textarea {
     &__swiper {
         padding-top: 50px;
         padding-bottom: 30px;
-        max-width: 1090px;
+        max-width: 100%;
     }
     // .review__slider
     &__slider {
@@ -853,6 +853,10 @@ textarea {
         left: -13px;
         top: -5px;
         margin-bottom: 0;
+
+        @media (max-width: 480px) {
+            position:static;
+        }
     }
     // .footer__text
     &__text {
@@ -931,11 +935,16 @@ textarea {
     }
 }
 .tinkoffPayForm{
-    padding: 1rem 1.5rem 1rem 1rem;
+    padding: 25px;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
+
+    p, a, button, .hero__btn {
+        font-family: 'Nunito',sans-serif;
+        text-transform: uppercase;
+    }
 }
 .tinkoffPayRow {
     max-width: 100%;

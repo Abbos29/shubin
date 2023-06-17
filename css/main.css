@@ -494,7 +494,8 @@ textarea {
 .accordion .accordion__item .accordion__item-content {
   padding-bottom: 20px;
   display: none;
-  animation: fade 0.3s ease;
+  -webkit-animation: fade 0.3s ease;
+          animation: fade 0.3s ease;
 }
 .accordion .accordion__item .accordion__item-content .content__text {
   font-size: 22px;
@@ -619,7 +620,7 @@ textarea {
 .review__swiper {
   padding-top: 50px;
   padding-bottom: 30px;
-  max-width: 1090px;
+  max-width: 100%;
 }
 @media (max-width: 768px) {
   .review__slider {
@@ -710,6 +711,11 @@ textarea {
   top: -5px;
   margin-bottom: 0;
 }
+@media (max-width: 480px) {
+  .footer__logo {
+    position: static;
+  }
+}
 .footer__text {
   font-size: 16px;
   line-height: 1.1;
@@ -776,11 +782,15 @@ textarea {
 }
 
 .tinkoffPayForm {
-  padding: 1rem 1.5rem 1rem 1rem;
+  padding: 25px;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
+}
+.tinkoffPayForm p, .tinkoffPayForm a, .tinkoffPayForm button, .tinkoffPayForm .hero__btn {
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
 }
 
 .tinkoffPayRow {
