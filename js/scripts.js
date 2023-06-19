@@ -153,5 +153,16 @@ $(document).ready(function() {
       type: 'inline'
     });
   });
+
+  // Функция для открытия модального окна 7
+  $('#btn7').on('click', function() {
+    $.magnificPopup.open({
+      items: {
+        src: '#modal7'
+      },
+      type: 'inline'
+    });
+  });
+
 });
 

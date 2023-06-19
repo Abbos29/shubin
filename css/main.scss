@@ -762,6 +762,7 @@ textarea {
             max-width: 100%;
             width: 100%;
             height: 700px;
+            border-radius: 10px;
 
             @media (max-width: 968px) {
                 height: 500px;
@@ -949,6 +950,29 @@ textarea {
 }
 
 
+.policy {
+    max-width: 900px;
+    padding: 0 10px;
+    width: 100%;
+    margin: 0 auto;
+
+    background: #fff;
+    color: #000;
+
+    @media (max-width: 480px) {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    &__title {
+        text-align: center;
+        margin: 30px 0 60px;
+        display: flex;
+        flex-direction: column;
+        // gap: 4px;
+    }
+}
+
 
 // TINKOFF
 
@@ -979,7 +1003,12 @@ textarea {
         text-transform: uppercase;
     }
 }
-.tinkoffPayRow {
+.tinkoffPayRow,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="hidden"]
+{
     max-width: 100%;
     width: 100%;
     font-family: 'Nunito',sans-serif;
@@ -1005,3 +1034,6 @@ textarea {
     height: auto;
     line-height: 1;
 }
+
+
+
