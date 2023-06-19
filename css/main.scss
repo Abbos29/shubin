@@ -43,6 +43,7 @@ section {
     }
     // .hero__top-date
     &__top-date {
+        min-width: auto;
     }
     // .hero__top-text
     &__top-text {
@@ -742,8 +743,10 @@ textarea {
 }
 
 .review {
+    padding-bottom: 20px;
     // .review__wrapper
     &__wrapper {
+
     }
 
     &__video {
@@ -806,7 +809,7 @@ textarea {
     }
 
     &__btn {
-        max-width: 300px;
+        max-width: 340px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 30px;

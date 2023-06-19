@@ -29,6 +29,9 @@ section {
     padding-top: 40px;
   }
 }
+.hero__top-date {
+  min-width: auto;
+}
 .hero__title {
   font-size: 48px;
   line-height: 1.1;
@@ -619,6 +622,9 @@ textarea {
   padding-bottom: 40px;
 }
 
+.review {
+  padding-bottom: 20px;
+}
 .review__video {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -683,7 +689,7 @@ textarea {
   border-radius: 10px;
 }
 .review__btn {
-  max-width: 300px;
+  max-width: 340px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
