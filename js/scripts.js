@@ -164,5 +164,15 @@ $(document).ready(function() {
     });
   });
 
+  // Функция для открытия модального окна 8
+  $('#btn8').on('click', function() {
+    $.magnificPopup.open({
+      items: {
+        src: '#modal8'
+      },
+      type: 'inline'
+    });
+  });
+
 });
 
