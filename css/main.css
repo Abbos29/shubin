@@ -616,6 +616,47 @@ textarea {
   padding-bottom: 40px;
 }
 
+.review__video {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px 25px;
+}
+@media (max-width: 850px) {
+  .review__video {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .review__video {
+    grid-template-columns: 1fr;
+    gap: 20px 20px;
+  }
+}
+.review__video iframe {
+  max-width: 100%;
+  width: 100%;
+  height: 700px;
+}
+@media (max-width: 968px) {
+  .review__video iframe {
+    height: 500px;
+  }
+}
+@media (max-width: 850px) {
+  .review__video iframe {
+    height: 550px;
+  }
+}
+@media (max-width: 768px) {
+  .review__video iframe {
+    height: 350px;
+  }
+}
+@media (max-width: 768px) {
+  .review__video iframe {
+    height: 500px;
+  }
+}
 .review__swiper {
   padding-top: 50px;
   padding-bottom: 30px;
