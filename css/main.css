@@ -48,6 +48,9 @@ section {
     font-size: 18px;
   }
 }
+.hero__btn {
+  cursor: pointer;
+}
 .hero__bottom-arrow {
   margin-top: 40px;
 }
