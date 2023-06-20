@@ -139,6 +139,9 @@ textarea {
   line-height: 1.2;
   padding-bottom: 15px;
 }
+.box__item-title s {
+  font-size: 22px;
+}
 @media (max-width: 920px) {
   .box__item-title {
     font-size: 25px;
@@ -585,7 +588,6 @@ textarea {
 
 .about__wrapper {
   display: flex;
-  align-items: center;
   gap: 20px 50px;
 }
 @media (max-width: 768px) {

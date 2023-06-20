@@ -212,6 +212,10 @@ textarea {
         font-size: 30px;
         line-height: 1.2;
         padding-bottom: 15px;
+
+        s {
+            font-size: 22px;
+        }
         
         @media (max-width: 920px) {
             font-size: 25px;
@@ -700,7 +704,7 @@ textarea {
     // .about__wrapper
     &__wrapper {
         display: flex;
-        align-items: center;
+        // align-items: center;
         gap: 20px 50px;
 
         @media (max-width: 768px) {
