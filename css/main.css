@@ -16,9 +16,18 @@ section {
   padding-bottom: 50px;
 }
 
+.open {
+  display: block !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
 @media (max-width: 768px) {
   .hero {
     background-image: none;
+    padding-bottom: 0;
   }
 }
 .hero__wrapper {
@@ -28,6 +37,24 @@ section {
   .hero__wrapper {
     padding-top: 40px;
   }
+}
+.hero__img-box {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .hero__img-box {
+    display: none;
+  }
+}
+.hero__img {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+.hero__img img {
+  margin: 0 auto;
 }
 .hero__top-date {
   min-width: auto;
@@ -46,9 +73,19 @@ section {
     font-size: 25px;
   }
 }
+@media (max-width: 480px) {
+  .hero__title {
+    text-align: center;
+  }
+}
 @media (max-width: 920px) {
   .hero__pretitle-2 {
     font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .hero__pretitle-2 {
+    text-align: center;
   }
 }
 .hero__btn {
@@ -56,6 +93,11 @@ section {
 }
 .hero__bottom-arrow {
   margin-top: 40px;
+}
+@media (max-width: 768px) {
+  .hero__bottom-arrow {
+    display: none;
+  }
 }
 @media (max-width: 480px) {
   .hero__bottom-arrow {
@@ -141,6 +183,9 @@ textarea {
 }
 .box__item-title s {
   font-size: 22px;
+}
+.box__item-title span {
+  color: gray;
 }
 @media (max-width: 920px) {
   .box__item-title {
@@ -276,6 +321,9 @@ textarea {
 }
 .tarif__item:nth-child(2) .box__item-title::after {
   background: #fff;
+}
+.tarif__item:nth-child(2) .box__item-title span {
+  color: #d8d5d5;
 }
 .tarif__item:nth-child(2) .hero__btn {
   background: #fff;
@@ -435,6 +483,11 @@ textarea {
 
 .answer {
   background: #171717;
+}
+.answer__btn {
+  max-width: 300px;
+  width: 100%;
+  margin: 30px auto 0;
 }
 
 .accordion .accordion__item {
@@ -892,4 +945,26 @@ input[type=hidden] {
   width: auto;
   height: auto;
   line-height: 1;
+  margin-left: auto;
+}
+
+.thanks {
+  display: none;
+  padding: 20px 0 0;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+.thanks__title {
+  font-size: 24px;
+  line-height: 1.1;
+  text-align: center;
+  color: #000;
+  margin-bottom: 10px;
+}
+.thanks__pretitle {
+  font-size: 22px;
+  line-height: 1.1;
+  text-align: center;
+  color: #000;
 }/*# sourceMappingURL=main.css.map */

@@ -26,6 +26,24 @@
 
 <body class="main__body">
 
+<!-- Yandex.Metrika counter --> 
+<script type="text/javascript" > 
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; 
+   m[i].l=1*new Date(); 
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} 
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) 
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); 
+ 
+   ym(13626140, "init", { 
+        clickmap:true, 
+        trackLinks:true, 
+        accurateTrackBounce:true, 
+        webvisor:true 
+   }); 
+</script> 
+<noscript><div><img src="https://mc.yandex.ru/watch/13626140" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+<!-- /Yandex.Metrika counter -->
+
 <!-- Main Page -->
 <main>
 
@@ -44,7 +62,7 @@
                         <p class="hero__top-text medium">Старт курса: 28 июня</p>
                     </div>
     
-                    <p class="hero__top-text">Срок обучения: 8 недель</p>
+                    <p class="hero__top-text">Срок обучения: 3 месяца</p>
                 </div>
     
                 <h1 class="hero__title">
@@ -93,10 +111,10 @@
                 </div> -->
             </div>
 
-            <!-- <div class="hero__img-box">
-                <img class="hero__img" src="./img/hero/hero-img.png" alt="hero-img">
+            <div class="hero__img-box">
+                <img class="hero__img" src="./img/man-1.png" alt="hero-img">
 
-            </div> -->
+            </div>
         </div>
 
         <div class="hero__bottom-arrow">
@@ -238,7 +256,7 @@
                 <div class="box__item-icon">
                     <img src="./img/tarif-1.png" alt="icon">
                 </div>
-                <p class="box__item-title">Тариф «Базовый»<br> <s>70 000 ₽</s><br> 59 900 ₽</p>
+                <p class="box__item-title">Тариф «Базовый»<br> <s>70 000 ₽</s><br> 59 900 ₽<br><span>4991 ₽ в месяц</span></p>
                 <ul class="box__item-list">
                     <li class="box__item-text"><span>Модуль 1.</span> Введение в курс</li>
                     <li class="box__item-text"><span>Модуль 2.</span> Источники целевого трафика</li>
@@ -280,7 +298,7 @@
                 <div class="box__item-icon">
                     <img src="./img/tarif-2.png" alt="icon">
                 </div>
-                <p class="box__item-title">Тариф «Про»<br> <s>100 000 ₽</s><br> 89 900 ₽</p>
+                <p class="box__item-title">Тариф «Про»<br> <s>100 000 ₽</s><br> 89 900 ₽<br><span>7 491 ₽ в месяц</span></p>
                 <ul class="box__item-list">
                     <li class="box__item-text"><span>Модуль 1.</span> Введение в курс</li>
                     <li class="box__item-text"><span>Модуль 2.</span> Источники целевого трафика</li>
@@ -325,7 +343,7 @@
                 <div class="box__item-icon">
                     <img src="./img/tarif-1.png" alt="icon">
                 </div>
-                <p class="box__item-title">Тариф «Индивидуальный»<br> <s>180 000 ₽</s><br> 149 900 ₽</p>
+                <p class="box__item-title">Тариф «Индивидуальный»<br> <s>180 000 ₽</s><br> 149 900 ₽<br><span>12 491 ₽ в месяц</span></p>
                 <ul class="box__item-list">
                     <li class="box__item-text"><span>Модуль 1.</span> Введение в курс</li>
                     <li class="box__item-text"><span>Модуль 2.</span> Источники целевого трафика</li>
@@ -905,6 +923,10 @@
                     </div>
                 </div>
             </div>
+
+            <a class="hero__btn answer__btn" id="btn7">ЗАДАТЬ ВОПРОС</a>
+
+            
         </div>
     </div>
 </section>
@@ -1371,6 +1393,34 @@
     </div>
 </div>
 
+
+<div id="modal7" class="mfp-hide">
+    <div class="tinkoffPayWidget tinkoffPayForm">
+        <div class="modal__top">
+            <p class="modal__title" id="modal-title">ЗАДАТЬ ВОПРОС</p>
+            <button title="Закрыть" class="mfp-close">×</button>
+        </div>
+
+        <!-- Form -->
+        <form class="contact-form" id="contact-form" method="post" action="send.php" onsubmit="return validate_form ( );">
+            <input name="email" type="email" placeholder="Email"/>
+
+            <input required name="text" type="text" placeholder="Задайте вопрос" class="form__input" />
+            
+            <input required name="phone" type="text" placeholder="Номер телефона*" class="form__input" />
+
+            <button class="hero__btn form__btn" type="submit">Отправить</button>
+        </form>
+
+        <div class="thanks">
+            <p class="thanks__title">Спасибо! Данные успешно отправлены.</p>
+            <!-- <p class="thanks__pretitle"></p> -->
+            <a class="thanks__link hero__btn" target="_blank" href="https://t.me/+oh7s4EQp0oQzM2Yy">Вступайте в телеграм чат!</a>
+        </div>
+
+        
+    </div>
+</div>
 
 </body>
 

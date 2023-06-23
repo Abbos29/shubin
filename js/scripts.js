@@ -176,3 +176,39 @@ $(document).ready(function() {
 
 });
 
+
+
+
+const form = document.getElementById("contact-form");
+const modalTitle = document.getElementById("modal-title");
+const submitButton = document.querySelector(".form__btn");
+const thanksMessage = document.querySelector(".thanks");
+const formInput = document.querySelector('.form__input');
+
+function sendFormData(event) {
+  event.preventDefault();
+  
+  if (formInput.checkValidity()) { // Проверяем валидность данных
+    const formData = new FormData(form);
+    fetch(form.action, {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.text())
+      .then(() => {
+        form.classList.add("hidden");
+        modalTitle.classList.add("hidden");
+        thanksMessage.classList.add("open");
+        thanksMessage.classList.remove("hidden");
+        // setTimeout(() => {
+        //   window.location.href = "https://t.me/+oh7s4EQp0oQzM2Yy";
+        // }, 3000);
+      })
+      .catch((error) => console.error(error));
+  } else {
+    formInput.reportValidity(); // Выводим сообщение об ошибке
+  }
+}
+
+// Добавляем слушатель событий на кнопку отправки формы:
+submitButton.addEventListener("click", sendFormData);

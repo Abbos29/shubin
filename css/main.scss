@@ -15,12 +15,20 @@ section {
     padding-bottom: 50px;
 }
 
+.open {
+    display: block !important;
+}
+.hidden {
+    display: none !important;
+}
+
 // Hero
 
 .hero {
 
     @media (max-width: 768px) {
         background-image: none;
+        padding-bottom: 0;
     }
     .container {
     }
@@ -30,6 +38,25 @@ section {
 
         @media (max-width: 768px) {
             padding-top: 40px;
+        }
+    }
+
+    &__img-box {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+    &__img {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+
+        img {
+            margin: 0 auto;
         }
     }
     // .hero__content
@@ -59,12 +86,18 @@ section {
         @media (max-width: 768px) {
             font-size: 25px;
         }
+        @media (max-width: 480px) {
+            text-align: center;
+        }
     }
     // .hero__pretitle-2
     &__pretitle-2 {
 
         @media (max-width: 920px) {
             font-size: 18px;
+        }
+        @media (max-width: 480px) {
+            text-align: center;
         }
     }
     // .hero__btns
@@ -90,6 +123,9 @@ section {
     &__bottom-arrow {
         margin-top: 40px;
 
+        @media (max-width: 768px) {
+            display: none;
+        }
         @media (max-width: 480px) {
             margin-top: 40px;
         }
@@ -215,6 +251,11 @@ textarea {
 
         s {
             font-size: 22px;
+        }
+
+        span {
+            // font-size: 20px;
+            color: gray;
         }
         
         @media (max-width: 920px) {
@@ -350,6 +391,10 @@ textarea {
             .box__item-title {
                 &::after {
                     background: #fff;
+                }
+                span {
+                    // font-size: 20px;
+                    color: #d8d5d5;
                 }
             }
 
@@ -530,6 +575,12 @@ textarea {
 
 .answer {
     background: #171717;
+
+    &__btn {
+        max-width: 300px;
+        width: 100%;
+        margin: 30px auto 0;
+    }
 }
 .accordion {
     .accordion__item {
@@ -1041,7 +1092,38 @@ input[type="hidden"]
     width: auto;
     height: auto;
     line-height: 1;
+    margin-left: auto;
 }
 
 
 
+
+// THANKS
+
+.thanks {
+    display: none;
+    padding: 20px 0 0;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    // .thanks__title
+    &__title {
+        font-size: 24px;
+        line-height: 1.1;
+        text-align: center;
+        color:#000;
+        margin-bottom: 10px;
+
+    }
+    &__pretitle {
+        font-size: 22px;
+        line-height: 1.1;
+        text-align: center;
+        color:#000;
+
+    }
+    // .thanks__link
+    &__link {
+        
+    }
+}
